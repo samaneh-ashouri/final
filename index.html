@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="codes/css/style.css">
+    <link rel="stylesheet" href="./codes/font/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="section1">
+
+            <div class="section-header">
+
+                <div class="circel">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+
+
+                <div class="text">
+                    BMI Calculation
+                </div>
+
+            </div>
+
+            <div class="content">
+                
+                <div class="container">
+                    
+                    <div class="bmi-countainer">
+                        <h2>BMI Calculator</h2>
+                        <div class="input-group">
+                            <label for="weight">Weight (kg): <span id="weight-value">70</span></label>
+                            <input type="range" id="weight" min="30" max="150" value="70">
+                        </div>
+                        <div class="input-group">
+                            <label for="height">Height (cm): <span id="height-value">170</span></label>
+                            <input type="range" id="height" min="120" max="220" value="170">
+                        </div>
+                        <div class="result">
+                            <p>BMI: <span id="bmi-value">24.2</span></p>
+                            <p>Status: <span id="bmi-status">Normal weight</span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="section2">
+            <div class="section-header">
+
+                <div class="circel">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+
+
+                <div class="text">
+                    Music Player
+                </div>
+
+            </div>
+
+           <div class="player-container">
+            <div class="music-player">
+                <div class="cover">
+                    <img id="cover-image" src="./codes/music/img/I-will-survive.jpg" alt="Cover">
+                </div>
+                <div class="fix">
+                    <div class="song-info">
+                        <span id="song-name"></span>
+                    </div>
+                    <div class="controls">
+                        <i id="random-btn" class="fa fa-random"></i>
+                        <i id="back-btn" class="fa fa-backward"></i>
+                        <i id="play-pause-btn" class="fa fa-play"></i>
+                        <i id="next-btn" class="fa fa-forward"></i>
+                        <i id="repeat-btn" class="fa fa-repeat"></i>
+                    </div>
+                    <div class="time">
+                        <span id="elapsed-time">00:00</span>
+                        <input type="range" id="time-slider" min="0" max="100" step="1" value="0">
+                        <span id="total-time">00:00</span>
+                    </div>
+                    
+                    <div class="volume">
+                        <label for="volume-slider"><i class="fa fa-volume-up"></i></label>
+                        <input type="range" id="volume-slider" min="0" max="100" step="0.01">
+                    </div>
+                    <audio id="audio-player" src="./codes/music/song1.mp3"></audio>
+                </div>
+            </div>
+            
+           </div>
+            
+        </div>
+
+
+        
+
+        <div class="section3">
+
+            <div class="section-header">
+
+                <div class="circel">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+
+
+                <div class="text">
+                    Count Down Timer
+                </div>
+
+            </div>
+
+
+            <div class="timer">
+
+                <div class="timer-box">
+                    <div class="box">
+                        <span id="days"></span>
+                        <p>Day</p>
+                    </div>
+                    <div class="box">
+                        <span id="hours"></span>
+                        <p>Hour</p>
+                    </div>
+                    <div class="box">
+                        <span id="minutes"></span>
+                        <p>Minute</p>
+                    </div>
+                    <div class="box">
+                        <span id="seconds"></span>
+                        <p>Second</p>
+                    </div>
+                </div>
+                               
+            </div>
+        </div>
+
+
+        <div class="section4">
+
+            <div class="section-header">
+
+                <div class="circel">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+
+
+                <div class="text">
+                    Form Validation
+                </div>
+
+            </div>
+
+            <div class="form-container">
+                <div class="container">
+                    <form id="form" action="#">
+                        <div class="input-control">                   
+                            <input id="username" class="form-input" name="username" type="text">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            
+                            <input class="form-input" id="email" name="email" type="text">
+                            <label for="label" class="form-label">Email</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            
+                            <input id="password" class="form-input" name="password" type="password">
+                            <label class="form-label" for="password">Password</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            
+                            <input id="password2" class="form-input" name="password2" type="password">
+                            <label class="form-label" for="password2">Repassword</label>
+                            <div class="error"></div>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="codes/js/js.js"></script>
+</html>

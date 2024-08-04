@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(20, 17, 17);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.container .section1{
+    width: 85%;
+    height: 450px;
+    background-color: rgb(24, 22, 22);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+}
+
+.container .section1 .section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 18%;
+    width: 100%;
+}
+
+.container .section1 .section-header .circel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.container .section1 .section-header .text{
+    margin-right: 20px;
+}
+
+.container .section1 .section-header .circel .red{
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section1 .section-header .circel .yellow{
+    width: 13px;
+    height: 13px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section1 .section-header .circel .green{
+    width: 13px;
+    height: 13px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.container .section1 .content{
+    background-color: black;
+    height: 78%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.container .section1 .content .container{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height:250px ;
+    position: absolute;
+    top: -10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.container .section1 .content .container h2{
+    font-weight: 100;
+    text-align: center;
+}
+
+.container .section1 .content .container .input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.container .section1 .content .container .input-group label{
+    margin-bottom: 5px;
+}
+
+.container .section1 .content .container .input-group input{
+    width: 310px;
+}
+
+.container .section1 .content .container .result{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#bmi-status {
+    color: green;
+    text-decoration: underline;
+}
+
+
+
+
+.container .section2{
+    width: 85%;
+    height: 600px;
+    background-color: rgb(24, 22, 22);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.container .section2 .section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 18%;
+    width: 100%;
+}
+
+.container .section2 .section-header .circel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.container .section2 .section-header .text{
+    margin-right: 20px;
+}
+
+.container .section2 .section-header .circel .red{
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section2 .section-header .circel .yellow{
+    width: 13px;
+    height: 13px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section2 .section-header .circel .green{
+    width: 13px;
+    height: 13px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.container .section2 .player-container{
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.music-player {
+    background-color: #524f4fd2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 380px;
+    height: 350px;
+    position: relative;
+}
+
+.container .section2 .player-container .music-player .fix{
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+}
+
+.cover{
+    position: absolute;
+    top: -50px;
+    left: 53px;
+}
+
+.cover img {
+    border-radius: 10px;
+    width: 280px;
+    height: 210px;
+}
+
+.song-info {
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.controls i {
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.controls i:hover {
+    color: rgb(216, 215, 215);
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.volume i {
+    margin-right: 10px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#time-slider {
+    flex-grow: 1;
+    margin: 0 10px;
+
+}
+
+
+
+
+
+
+.container .section3{
+    width: 85%;
+    height: 350px;
+    background-color: rgb(24, 22, 22);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.container .section3 .section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 18%;
+    width: 100%;
+}
+
+.container .section3 .section-header .circel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.container .section3 .section-header .text{
+    margin-right: 20px;
+}
+
+.container .section3 .section-header .circel .red{
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section3 .section-header .circel .yellow{
+    width: 13px;
+    height: 13px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section3 .section-header .circel .green{
+    width: 13px;
+    height: 13px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.section3 .timer{
+    width: 100%;
+    height: 75%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section3 .timer .timer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 27, 27);
+    height: 90px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.section3 .timer .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+
+
+
+.container .section4{
+    width: 85%;
+    height: 500px;
+    background-color: rgb(24, 22, 22);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.container .section4 .section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 18%;
+    width: 100%;
+}
+
+.container .section4 .section-header .circel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.container .section4 .section-header .text{
+    margin-right: 20px;
+}
+
+.container .section4 .section-header .circel .red{
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section4 .section-header .circel .yellow{
+    width: 13px;
+    height: 13px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .section4 .section-header .circel .green{
+    width: 13px;
+    height: 13px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: black;
+}
+
+.form-container .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#form button {
+    margin-top: 3px;
+    width: 100%;
+    color: white;
+    background-color: rgb(60, 189, 88);
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.input-control {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    margin-bottom: 3px;
+}
+
+
+.input-control input{
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 15px;
+	height: 50px;
+	width: 100%;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 13px;
+    height: 13px;
+    margin-left: 5px;
+}
+
+
+.input-control label{
+    position: absolute;
+    color: rgb(82, 81, 81);
+    top: 20px;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+input:focus ~ label{
+    padding-top: 5px;
+    top: 5px;
+    /* left: 15px; */
+    font-size: 13px;
+    color: rgb(161, 159, 159);
+
+}
+
+@media all and (max-width:650px){
+    .container .section1 .content .container{
+        width: 90%;
+    }
+}
